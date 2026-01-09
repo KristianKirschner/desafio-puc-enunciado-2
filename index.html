@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeria de Fotos</title>
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="flex flex-col min-h-screen bg-gray-50">
+
+  <!-- Header -->
+  <header class="bg-gray-800 text-white py-6 text-center">
+    <h1 class="text-3xl font-bold">Galeria de Fotos</h1>
+  </header>
+
+  <!-- Main -->
+  <main class="flex-1 p-6">
+
+    <!-- Search Bar -->
+    <div class="flex justify-center mb-6">
+      <div class="flex w-full max-w-md">
+
+        <!-- Campo de busca -->
+        <div class="relative flex-1">
+          <input type="text" id="searchInput" placeholder="Pesquisar fotos..." class="w-full pl-4 pr-4 py-2 border border-gray-300 rounded-l shadow
+               focus:outline-none focus:ring-2 focus:ring-blue-400" />
+        </div>
+
+        <!-- Botão de pesquisa -->
+        <button id="searchButton" class="px-4 bg-blue-500 border border-blue-500 rounded-r
+             hover:bg-blue-600 transition flex items-center justify-center" aria-label="Pesquisar">
+          <img src="https://cdn-icons-png.flaticon.com/512/54/54481.png" alt="Pesquisar" class="h-5 w-5 invert" />
+        </button>
+
+      </div>
+    </div>
+
+
+    <!-- Nenhum resultado -->
+    <p id="noResults" class="hidden text-center text-red-500 font-semibold mb-4">Nenhuma foto encontrada</p>
+
+    <!-- Gallery -->
+    <div id="gallery" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"></div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white text-center py-4">
+    © 2026 Galeria de Fotos. Todos os direitos reservados.
+  </footer>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+
+</html>
