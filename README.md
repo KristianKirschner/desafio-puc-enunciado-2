@@ -1,8 +1,7 @@
 
 ## Galeria de Fotos
 
-Este projeto foi desenvolvido como parte do Exercício de Programação – Enunciado 02 (2026/1), proposto pela PUCRS.
-A aplicação consiste em uma galeria de fotos que permite visualizar, pesquisar e filtrar imagens com base em palavras-chave.
+Este projeto foi desenvolvido como parte do desafio do processo seletivo da Aceleradora Ágil da PUCRS, conforme o Enunciado 02.
 
 ---
 
